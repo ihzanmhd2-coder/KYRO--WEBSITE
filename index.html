@@ -1,200 +1,1664 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KYRO Branding Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>KYRO Branding Solutions | Kottayam</title>
 
-<style>
+    <meta name="description"
+        content="KYRO Branding Solutions - Sign boards, LED boards, T-shirt printing, advertising umbrellas, newspaper boxes and customized branding solutions in Kottayam.">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-body{
-background:#f5f7fb;
-color:#222;
-}
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-header{
-background:#0b0f19;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-}
+    <style>
 
-header img{
-height:55px;
-}
+        /* =========================
+           BASIC RESET
+        ========================= */
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-weight:500;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.hero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:70px 8%;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-.left{
-max-width:550px;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f7f9fc;
+            color: #151820;
+            line-height: 1.6;
+        }
 
-.left h1{
-font-size:55px;
-color:#111;
-line-height:1.2;
-}
+        a {
+            text-decoration: none;
+        }
 
-.left span{
-color:#2F5BFF;
-}
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
-.left p{
-margin:25px 0;
-font-size:18px;
-line-height:1.8;
-color:#555;
-}
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
 
-.btn{
-display:inline-block;
-padding:15px 35px;
-background:#2F5BFF;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:600;
-}
 
-.right img{
-width:500px;
-border-radius:18px;
-box-shadow:0 20px 45px rgba(0,0,0,.15);
-}
+        /* =========================
+           HEADER
+        ========================= */
 
-footer{
-background:#0b0f19;
-color:white;
-padding:30px;
-text-align:center;
-margin-top:80px;
-}
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #080b12;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
 
-@media(max-width:900px){
+        .navbar {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            min-height: 78px;
 
-.hero{
-flex-direction:column;
-text-align:center;
-}
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-.right img{
-width:100%;
-margin-top:40px;
-}
+        .logo {
+            height: 58px;
+            width: auto;
+            object-fit: contain;
+        }
 
-.left h1{
-font-size:40px;
-}
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
 
-nav{
-display:none;
-}
+        .nav-links a {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
 
-}
+        .nav-links a:hover {
+            color: #3568ff;
+        }
 
-</style>
+        .nav-cta {
+            background: #3568ff;
+            padding: 11px 20px;
+            border-radius: 7px;
+        }
 
+        .nav-cta:hover {
+            color: #ffffff !important;
+            background: #2454df;
+        }
+
+        .menu-btn {
+            display: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: calc(100vh - 78px);
+
+            display: flex;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at 80% 30%,
+                    rgba(53, 104, 255, 0.16),
+                    transparent 35%
+                ),
+                linear-gradient(135deg, #ffffff, #f1f5fb);
+
+            padding: 80px 0;
+        }
+
+        .hero-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .hero-small {
+            color: #3568ff;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.12;
+            font-weight: 800;
+            color: #0c1019;
+        }
+
+        .hero h1 span {
+            color: #3568ff;
+        }
+
+        .hero-text {
+            font-size: 17px;
+            color: #5c6472;
+            max-width: 570px;
+            margin: 25px 0 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 14px 25px;
+
+            border-radius: 8px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #3568ff;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2454df;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1.5px solid #d5dbe6;
+            color: #151820;
+            background: white;
+        }
+
+        .btn-outline:hover {
+            border-color: #3568ff;
+            color: #3568ff;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 470px;
+            object-fit: cover;
+
+            border-radius: 24px;
+
+            box-shadow: 0 25px 70px rgba(10, 20, 40, 0.18);
+        }
+
+        .hero-badge {
+            position: absolute;
+            left: -25px;
+            bottom: 25px;
+
+            background: white;
+            padding: 18px 22px;
+
+            border-radius: 14px;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.13);
+        }
+
+        .hero-badge strong {
+            display: block;
+            color: #3568ff;
+            font-size: 22px;
+        }
+
+        .hero-badge span {
+            color: #555;
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           GENERAL SECTION
+        ========================= */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-label {
+            color: #3568ff;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .section-heading h2 {
+            font-size: 40px;
+            line-height: 1.2;
+            color: #0b0f18;
+        }
+
+        .section-heading p {
+            max-width: 650px;
+            margin: 15px auto 0;
+            color: #667080;
+        }
+
+
+        /* =========================
+           PRODUCTS
+        ========================= */
+
+        .products {
+            background: #ffffff;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .product-card {
+            background: #ffffff;
+
+            border: 1px solid #e8ecf3;
+
+            border-radius: 16px;
+
+            overflow: hidden;
+
+            box-shadow: 0 8px 30px rgba(12, 20, 40, 0.06);
+
+            transition: 0.35s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 45px rgba(12, 20, 40, 0.13);
+        }
+
+        .product-image {
+            height: 240px;
+            overflow: hidden;
+            background: #eef2f8;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            transition: 0.5s;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.06);
+        }
+
+        .product-info {
+            padding: 24px;
+        }
+
+        .product-info h3 {
+            font-size: 20px;
+            margin-bottom: 9px;
+            color: #111620;
+        }
+
+        .product-info p {
+            font-size: 14px;
+            color: #687282;
+            margin-bottom: 20px;
+        }
+
+        .product-link {
+            color: #3568ff;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           WHY KYRO
+        ========================= */
+
+        .why {
+            background: #f5f7fb;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px 24px;
+
+            border-radius: 14px;
+
+            border: 1px solid #e8ecf3;
+
+            transition: 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+        }
+
+        .feature-icon {
+            width: 52px;
+            height: 52px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+
+            background: #eaf0ff;
+            color: #3568ff;
+
+            font-size: 22px;
+
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            color: #697384;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .about-content .section-label {
+            margin-bottom: 12px;
+        }
+
+        .about-content h2 {
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: #657080;
+            margin-bottom: 18px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .about-list li {
+            margin-bottom: 12px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .about-list li::before {
+            content: "✓";
+            color: #3568ff;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            background: #0a0e17;
+            color: white;
+        }
+
+        .cta-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            color: #aeb6c5;
+        }
+
+        .cta .btn {
+            white-space: nowrap;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background: #f5f7fb;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 35px;
+
+            border-radius: 16px;
+
+            border: 1px solid #e6eaf1;
+        }
+
+        .contact-card h3 {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 24px;
+        }
+
+        .contact-icon {
+            width: 44px;
+            height: 44px;
+
+            min-width: 44px;
+
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #eaf0ff;
+            color: #3568ff;
+        }
+
+        .contact-item strong {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .contact-item span,
+        .contact-item a {
+            color: #697384;
+            font-size: 14px;
+        }
+
+        .contact-item a:hover {
+            color: #3568ff;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #080b12;
+            color: white;
+            padding: 55px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            height: 55px;
+            margin-bottom: 20px;
+        }
+
+        .footer-about {
+            color: #929aaa;
+            font-size: 14px;
+            max-width: 400px;
+        }
+
+        footer h3 {
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #929aaa;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: #3568ff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 22px;
+
+            text-align: center;
+
+            color: #777f8e;
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           FLOATING WHATSAPP
+        ========================= */
+
+        .whatsapp {
+            position: fixed;
+
+            right: 22px;
+            bottom: 22px;
+
+            width: 58px;
+            height: 58px;
+
+            border-radius: 50%;
+
+            background: #25D366;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 25px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+            z-index: 999;
+
+            transition: 0.3s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 1000px) {
+
+            .hero h1 {
+                font-size: 46px;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                gap: 40px;
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                min-height: 70px;
+            }
+
+            .logo {
+                height: 50px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+
+                position: absolute;
+
+                top: 70px;
+                left: 0;
+
+                width: 100%;
+
+                background: #080b12;
+
+                flex-direction: column;
+
+                padding: 25px;
+
+                gap: 20px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 45px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero-text {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-image img {
+                height: 350px;
+            }
+
+            .hero-badge {
+                left: 15px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .section-heading h2 {
+                font-size: 32px;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                text-align: center;
+            }
+
+            .about-list {
+                text-align: left;
+            }
+
+            .cta-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cta h2 {
+                font-size: 31px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-text {
+                font-size: 15px;
+            }
+
+            .hero-image img {
+                height: 280px;
+            }
+
+            .section-heading h2 {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
 </head>
+
 
 <body>
 
-<header>
 
-<img src="logo.jpg" alt="KYRO Logo">
+    <!-- =========================
+         HEADER
+    ========================= -->
 
-<nav>
+    <header>
 
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">Gallery</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+        <div class="navbar">
 
-</nav>
+            <a href="#home">
+                <img src="logo.png.jpeg"
+                    class="logo"
+                    alt="KYRO Branding Solutions">
+            </a>
 
-</header>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-<section class="hero">
+            <nav class="nav-links" id="navLinks">
 
-<div class="left">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
 
-<h1>Complete <span>Branding</span><br>Solutions</h1>
+                <a href="https://wa.me/919847170154?text=Hello%20KYRO%20Branding%20Solutions%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products"
+                    class="nav-cta"
+                    target="_blank">
+                    WhatsApp
+                </a>
 
-<p>
+            </nav>
 
-KYRO Branding Solutions provides premium LED Boards,
-Lollipop Sign Boards,
-Newspaper Boxes,
-T-Shirt Printing,
-Advertising Umbrellas,
-and complete branding solutions for businesses.
+        </div>
 
-</p>
+    </header>
 
-<a class="btn"
-href="https://wa.me/919847170154">
 
-Order on WhatsApp
+    <!-- =========================
+         HERO
+    ========================= -->
 
-</a>
+    <main>
 
-</div>
+        <section class="hero" id="home">
 
-<div class="right">
+            <div class="hero-content">
 
-<img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80">
+                <div>
 
-</div>
+                    <div class="hero-small">
+                        Branding • Printing • Advertising
+                    </div>
 
-</section>
+                    <h1>
+                        Make Your Brand
+                        <span>Stand Out.</span>
+                    </h1>
 
-<footer>
+                    <p class="hero-text">
 
-<h3>KYRO Branding Solutions</h3>
+                        KYRO Branding Solutions provides creative and professional
+                        branding products for businesses, shops, offices, events
+                        and organizations.
 
-<p>
+                    </p>
 
-📍 Kottayam - 686020, Kerala, India
+                    <div class="hero-buttons">
 
-</p>
+                        <a href="#products" class="btn btn-primary">
+                            Explore Products
+                        </a>
 
-<p>
+                        <a href="https://wa.me/919847170154?text=Hello%20KYRO%20Branding%20Solutions%2C%20I%20would%20like%20to%20get%20a%20quote"
+                            class="btn btn-outline"
+                            target="_blank">
+                            Get a Quote
+                        </a>
 
-📞 9847170154
+                    </div>
 
-</p>
+                </div>
 
-<p>
 
-✉ indiakyro@gmail.com
+                <div class="hero-image">
 
-</p>
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+                        alt="Professional branding and business">
 
-</footer>
+                    <div class="hero-badge">
+
+                        <strong>KYRO</strong>
+
+                        <span>Complete Branding Solutions</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRODUCTS
+        ========================= -->
+
+        <section class="products" id="products">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="section-label">
+                        Our Products
+                    </div>
+
+                    <h2>Branding That Gets Noticed</h2>
+
+                    <p>
+                        Explore our range of customized branding and advertising
+                        solutions designed to help your business stand out.
+                    </p>
+
+                </div>
+
+
+                <div class="product-grid">
+
+
+                    <!-- PRODUCT 1 -->
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=900&q=85"
+                                alt="LED Slim Light Board">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>LED Slim Light Boards</h3>
+
+                            <p>
+                                Modern illuminated advertising boards designed
+                                to make your business visible day and night.
+                            </p>
+
+                            <a href="#contact" class="product-link">
+                                Get Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85"
+                                alt="Custom T-Shirt Printing">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>T-Shirt Printing</h3>
+
+                            <p>
+                                Customized T-shirt printing for businesses,
+                                events, teams, organizations and promotions.
+                            </p>
+
+                            <a href="#contact" class="product-link">
+                                Get Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 3 -->
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=900&q=85"
+                                alt="Advertising Umbrella">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>Advertising Umbrellas</h3>
+
+                            <p>
+                                Promotional umbrellas customized with your
+                                business logo and branding.
+                            </p>
+
+                            <a href="#contact" class="product-link">
+                                Get Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 4 -->
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85"
+                                alt="Lollipop Sign Board">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>Lollipop Sign Boards</h3>
+
+                            <p>
+                                Eye-catching outdoor advertising boards that
+                                help customers notice your business.
+                            </p>
+
+                            <a href="#contact" class="product-link">
+                                Get Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 5 -->
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85"
+                                alt="Newspaper Box">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>Newspaper Boxes</h3>
+
+                            <p>
+                                Branded and customized newspaper distribution
+                                boxes for commercial and residential use.
+                            </p>
+
+                            <a href="#contact" class="product-link">
+                                Get Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 6 -->
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=85"
+                                alt="Custom Branding Solutions">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>Custom Branding</h3>
+
+                            <p>
+                                Customized branding solutions created according
+                                to your business requirements.
+                            </p>
+
+                            <a href="https://wa.me/919847170154?text=Hello%20KYRO%2C%20I%20need%20a%20custom%20branding%20solution"
+                                class="product-link"
+                                target="_blank">
+                                Enquire Now →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHY KYRO
+        ========================= -->
+
+        <section class="why">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="section-label">
+                        Why Choose KYRO
+                    </div>
+
+                    <h2>Built Around Your Brand</h2>
+
+                    <p>
+                        We focus on quality, creativity and customized solutions
+                        to give your business a professional identity.
+                    </p>
+
+                </div>
+
+
+                <div class="features">
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ★
+                        </div>
+
+                        <h3>Premium Quality</h3>
+
+                        <p>
+                            Quality materials and professional finishing
+                            for long-lasting branding.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✦
+                        </div>
+
+                        <h3>Custom Designs</h3>
+
+                        <p>
+                            Branding solutions customized to match
+                            your business identity.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ⚡
+                        </div>
+
+                        <h3>Fast Service</h3>
+
+                        <p>
+                            Efficient production and responsive customer
+                            service for your requirements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <h3>Complete Solution</h3>
+
+                        <p>
+                            From printing to outdoor advertising,
+                            we help bring your branding ideas to life.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================= -->
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+                <div class="about-grid">
+
+
+                    <div class="about-image">
+
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=85"
+                            alt="KYRO Branding Solutions">
+
+                    </div>
+
+
+                    <div class="about-content">
+
+                        <div class="section-label">
+                            About KYRO
+                        </div>
+
+                        <h2>
+                            Helping Businesses
+                            Build Their Identity.
+                        </h2>
+
+                        <p>
+                            KYRO Branding Solutions provides customized branding
+                            and advertising products for businesses and organizations.
+                        </p>
+
+                        <p>
+                            Our goal is simple — create branding products that
+                            look professional, attract attention and represent
+                            your business effectively.
+                        </p>
+
+
+                        <ul class="about-list">
+
+                            <li>Customized branding solutions</li>
+
+                            <li>Professional product finishing</li>
+
+                            <li>Business and promotional advertising</li>
+
+                            <li>Solutions for shops, offices and events</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================= -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <div>
+
+                        <h2>
+                            Ready to Build Your Brand?
+                        </h2>
+
+                        <p>
+                            Tell us what you need and let's create something
+                            that represents your business.
+                        </p>
+
+                    </div>
+
+
+                    <a href="https://wa.me/919847170154?text=Hello%20KYRO%20Branding%20Solutions%2C%20I%20would%20like%20to%20discuss%20a%20branding%20project"
+                        class="btn btn-primary"
+                        target="_blank">
+
+                        Talk to KYRO
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================= -->
+
+        <section class="contact" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="section-label">
+                        Contact Us
+                    </div>
+
+                    <h2>Let's Talk About Your Brand</h2>
+
+                    <p>
+                        Contact KYRO Branding Solutions for product details,
+                        custom requirements and quotations.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-card">
+
+                        <h3>Get In Touch</h3>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                ☎
+                            </div>
+
+                            <div>
+
+                                <strong>Phone / WhatsApp</strong>
+
+                                <a href="tel:+919847170154">
+                                    9847170154
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                ✉
+                            </div>
+
+                            <div>
+
+                                <strong>Email</strong>
+
+                                <a href="mailto:indiakyro@gmail.com">
+                                    indiakyro@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                ⌖
+                            </div>
+
+                            <div>
+
+                                <strong>Location</strong>
+
+                                <span>
+                                    Kottayam - 686020, Kerala, India
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                ☁
+                            </div>
+
+                            <div>
+
+                                <strong>Business</strong>
+
+                                <span>
+                                    KYRO Branding Solutions
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <h3>Start Your Project</h3>
+
+                        <p style="color:#687282;margin-bottom:25px;">
+
+                            For product prices, customization options,
+                            sizes and bulk orders, contact us directly
+                            on WhatsApp.
+
+                        </p>
+
+
+                        <a href="https://wa.me/919847170154?text=Hello%20KYRO%20Branding%20Solutions%2C%20I%20would%20like%20to%20know%20about%20your%20products"
+                            class="btn btn-primary"
+                            style="width:100%;"
+                            target="_blank">
+
+                            Chat on WhatsApp
+
+                        </a>
+
+
+                        <a href="tel:+919847170154"
+                            class="btn btn-outline"
+                            style="width:100%;margin-top:12px;">
+
+                            Call 9847170154
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <div>
+
+                    <img src="logo.png.jpeg"
+                        class="footer-logo"
+                        alt="KYRO Branding Solutions">
+
+                    <p class="footer-about">
+
+                        KYRO Branding Solutions — complete branding,
+                        printing and advertising solutions for businesses
+                        and organizations.
+
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Quick Links</h3>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#products">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Contact</h3>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="tel:+919847170154">
+                                9847170154
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:indiakyro@gmail.com">
+                                indiakyro@gmail.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">
+                                Kottayam - 686020
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                © 2026 KYRO Branding Solutions. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         FLOATING WHATSAPP
+    ========================= -->
+
+    <a class="whatsapp"
+        href="https://wa.me/919847170154?text=Hello%20KYRO%20Branding%20Solutions%2C%20I%20am%20interested%20in%20your%20products"
+        target="_blank"
+        aria-label="Chat with KYRO on WhatsApp">
+
+        ☎
+
+    </a>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        function toggleMenu() {
+
+            const menu = document.getElementById("navLinks");
+
+            menu.classList.toggle("active");
+
+        }
+
+
+        /* Close mobile menu after clicking a link */
+
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                document.getElementById("navLinks").classList.remove("active");
+
+            });
+
+        });
+
+    </script>
+
 
 </body>
+
 </html>
