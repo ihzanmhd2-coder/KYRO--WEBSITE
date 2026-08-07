@@ -5,34 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KYRO Branding Solutions</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:Poppins,sans-serif;
 }
 
 body{
-background:#f5f7fa;
+background:#f5f7fb;
 color:#222;
 }
 
 header{
-background:#0f172a;
-color:white;
-padding:18px 8%;
+background:#0b0f19;
+padding:15px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+position:sticky;
+top:0;
 }
 
-.logo{
-font-size:30px;
-font-weight:700;
-color:#2F5BFF;
+header img{
+height:55px;
 }
 
 nav a{
@@ -43,87 +43,79 @@ font-weight:500;
 }
 
 .hero{
-height:90vh;
 display:flex;
-justify-content:center;
+justify-content:space-between;
 align-items:center;
-text-align:center;
-background:linear-gradient(rgba(15,23,42,.75),rgba(15,23,42,.75)),
-url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-background-position:center;
-color:white;
-padding:20px;
+padding:70px 8%;
 }
 
-.hero h1{
+.left{
+max-width:550px;
+}
+
+.left h1{
 font-size:55px;
-margin-bottom:20px;
+color:#111;
+line-height:1.2;
 }
 
-.hero p{
-font-size:20px;
-margin-bottom:35px;
+.left span{
+color:#2F5BFF;
+}
+
+.left p{
+margin:25px 0;
+font-size:18px;
+line-height:1.8;
+color:#555;
 }
 
 .btn{
-background:#2F5BFF;
+display:inline-block;
 padding:15px 35px;
+background:#2F5BFF;
 color:white;
 text-decoration:none;
 border-radius:8px;
 font-weight:600;
 }
 
-section{
-padding:70px 8%;
-}
-
-.title{
-text-align:center;
-font-size:35px;
-margin-bottom:40px;
-color:#0f172a;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 5px 18px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card h3{
-padding:15px;
-}
-
-.card p{
-padding:0 15px 20px;
+.right img{
+width:500px;
+border-radius:18px;
+box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
 footer{
-background:#0f172a;
+background:#0b0f19;
 color:white;
-padding:25px;
+padding:30px;
+text-align:center;
+margin-top:80px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
 text-align:center;
 }
+
+.right img{
+width:100%;
+margin-top:40px;
+}
+
+.left h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+
 </style>
 
 </head>
@@ -132,82 +124,49 @@ text-align:center;
 
 <header>
 
-<div class="logo">KYRO</div>
+<img src="logo.jpg" alt="KYRO Logo">
 
 <nav>
+
 <a href="#">Home</a>
-<a href="#">About</a>
 <a href="#">Products</a>
 <a href="#">Gallery</a>
+<a href="#">About</a>
 <a href="#">Contact</a>
+
 </nav>
 
 </header>
 
 <section class="hero">
 
-<div>
+<div class="left">
 
-<h1>Complete Branding & Advertising Solutions</h1>
+<h1>Complete <span>Branding</span><br>Solutions</h1>
 
 <p>
-LED Boards | Lollipop Boards | T-Shirt Printing | Newspaper Boxes | Advertising Umbrellas
+
+KYRO Branding Solutions provides premium LED Boards,
+Lollipop Sign Boards,
+Newspaper Boxes,
+T-Shirt Printing,
+Advertising Umbrellas,
+and complete branding solutions for businesses.
+
 </p>
 
-<a href="#" class="btn">Explore Products</a>
+<a class="btn"
+href="https://wa.me/919847170154">
+
+Order on WhatsApp
+
+</a>
 
 </div>
 
-</section>
+<div class="right">
 
-<section>
-
-<h2 class="title">Our Products</h2>
-
-<div class="cards">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80">
-<h3>LED Slim Light Board</h3>
-<p>Modern illuminated sign boards for businesses.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80">
-<h3>T-Shirt Printing</h3>
-<p>Premium customized printing for all events.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80">
-<h3>Advertising Umbrella</h3>
-<p>Custom printed promotional umbrellas.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">Why Choose KYRO?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Premium Quality</h3>
-<p>High-quality materials and long-lasting products.</p>
-</div>
-
-<div class="card">
-<h3>Custom Branding</h3>
-<p>Unique designs that match your business identity.</p>
-</div>
-
-<div class="card">
-<h3>Fast Delivery</h3>
-<p>Quick production and on-time delivery.</p>
-</div>
+<img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80">
 
 </div>
 
@@ -215,7 +174,25 @@ LED Boards | Lollipop Boards | T-Shirt Printing | Newspaper Boxes | Advertising 
 
 <footer>
 
-<p>© 2026 KYRO Branding Solutions. All Rights Reserved.</p>
+<h3>KYRO Branding Solutions</h3>
+
+<p>
+
+📍 Kottayam - 686020, Kerala, India
+
+</p>
+
+<p>
+
+📞 9847170154
+
+</p>
+
+<p>
+
+✉ indiakyro@gmail.com
+
+</p>
 
 </footer>
 
