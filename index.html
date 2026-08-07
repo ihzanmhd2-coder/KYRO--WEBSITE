@@ -8,6 +8,60 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+.products{
+padding:80px 8%;
+background:#ffffff;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#0b0f19;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:18px 18px 10px;
+}
+
+.card p{
+padding:0 18px 20px;
+color:#555;
+}
+
+.card-btn{
+display:inline-block;
+margin:0 18px 20px;
+padding:10px 22px;
+background:#2F5BFF;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+}
 
 *{
 margin:0;
@@ -139,6 +193,50 @@ display:none;
 </header>
 
 <section class="hero">
+<section class="products">
+
+<h2 class="section-title">Our Products</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80">
+<h3>LED Slim Light Boards</h3>
+<p>Modern illuminated LED sign boards for shops, offices and businesses.</p>
+<a href="#" class="card-btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80">
+<h3>T-Shirt Printing</h3>
+<p>Custom printed T-shirts for companies, schools, events and promotions.</p>
+<a href="#" class="card-btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80">
+<h3>Advertising Umbrellas</h3>
+<p>Weather-resistant promotional umbrellas with custom branding.</p>
+<a href="#" class="card-btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1486312338219-ce68e2c6b7d?auto=format&fit=crop&w=900&q=80">
+<h3>Lollipop Sign Boards</h3>
+<p>Eye-catching outdoor sign boards for advertising and branding.</p>
+<a href="#" class="card-btn">View Details</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80">
+<h3>Newspaper Boxes</h3>
+<p>Durable branded newspaper boxes for residential and commercial use.</p>
+<a href="#" class="card-btn">View Details</a>
+</div>
+
+</div>
+
+</section>
 
 <div class="left">
 
